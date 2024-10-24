@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Translation App</h1>
+        
+        <div class="translation-box">
+            <div class="input-section">
+                <textarea id="sourceText" placeholder="Enter English text here..."></textarea>
+                <select id="targetLanguage">
+                    <option value="de">German</option>
+                    <option value="fr">French</option>
+                    <option value="es">Spanish</option>
+                </select>
+            </div>
+            
+            <div class="output-section">
+                <textarea id="translatedText" readonly placeholder="Translation will appear here..."></textarea>
+                <button id="speakButton" disabled>
+                    <span class="icon">🔊</span> Read Aloud
+                </button>
+            </div>
+        </div>
+
+        <div class="history-section">
+            <h2>Translation History</h2>
+            <div id="historyList"></div>
+        </div>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
